@@ -6,6 +6,7 @@ import './myStyles.css'
 //LEARN ARROW FUNCTIONS! 
 
 class Midboard extends React.Component {
+<<<<<<< HEAD
     /* constructor(props)
         super(props)
 
@@ -13,6 +14,9 @@ class Midboard extends React.Component {
             color: "green "
         } */ 
         
+=======
+
+>>>>>>> cfe8302b513f679bcde7e5b0b6f53f57bf7276b3
     state = {
         tasks: [{name:"BLUE", category:"leftpadcolor1", bgcolor:"blue"},
                 {name:"RED", category:"leftpadcolor2", bgcolor:"red"},
@@ -122,8 +126,12 @@ class Midboard extends React.Component {
                 
                     <div className='mid-pad-circle1'
                         onDragOver={(e)=> this.onDragOver(e)}
+<<<<<<< HEAD
                         onDrop={(e)=>this.onDrop(e, "midcolor1")}
                         style = {{backgroundColor: ' '}}>
+=======
+                        onDrop={(e)=>this.onDrop(e, "midcolor1")}>
+>>>>>>> cfe8302b513f679bcde7e5b0b6f53f57bf7276b3
                             {tasks.midcolor1}
                     </div>
                     <div className='mid-pad-circle2'
