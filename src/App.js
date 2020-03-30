@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Midboard from './components/MidBoard'
-import DesignContainer from './components/DesignContainer'
+//import DnD from './components/DnD'
 //import {MidBoard} from './components/MidBoard.js (NOT WORKING)'
 
 //import component js pages here
@@ -16,8 +16,7 @@ function App() {
     <div className="App">
   
       <header className="App-header">
-      <Midboard/>
-      <DesignContainer/>
+        <Midboard/>
       </header>
     </div>
   );

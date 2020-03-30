@@ -1,25 +1,26 @@
-import React from 'react';
+/* import React from 'react';
 import ReactDOM from 'react-dom';
+import MidBoard from './MidBoard'
 
 
 
-class DesignContainer extends React.Component {
+class DnD extends React.Component {
 
     state = {
-        tasks: [{name:"BLUE", category:"beat1", bgcolor:"blue"},
-                {name:"RED", category:"beat2", bgcolor:"red"},
-                {name:"YELLOW", category:"beat3", bgcolor:"yellow"},
-                {name:"GREEN", category:"beat4", bgcolor:"green"},
-                {name:"PINK", category:"beat5", bgcolor:"pink"},
-                {name:"PURPLE", category:"beat6", bgcolor:"purple"}]
+        tasks: [{name:"BLUE", category:"beat", bgcolor:"blue"},
+                {name:"RED", category:"beat", bgcolor:"red"},
+                {name:"YELLOW", category:"beat", bgcolor:"yellow"},
+                {name:"GREEN", category:"beat", bgcolor:"green"},
+                {name:"PINK", category:"beat", bgcolor:"pink"},
+                {name:"PURPLE", category:"beat", bgcolor:"purple"}]      
     }
 
-    props = {
-        assign: [{name:"Ya Beatses", category:" ", beats:"yourbeats", bgcolor:"gray"}]
-    }
+    /* state = {
+        assign: [{name:"Ya Beatses", category:"yourBeats", bgcolor:"gray"}]
+    } 
 
-    onDragOver = (ev) => {
-        ev.preventDefault();
+    onDragOver = (event) => {
+        event.preventDefault();
     }
 
     onDragStart = (ev, id) => {
@@ -27,8 +28,8 @@ class DesignContainer extends React.Component {
         ev.dataTransfer.setData("id", id);
     }
 
-   /* onDrop = (ev, a) => {
-        let id = ev.dataTransfer.getData("id");
+   onDrop = (event, a) => {
+        let id = event.dataTransfer.getData("id");
 
         let tasks =this.state.tasks.filter((task) => {
             if(task.name = id) {
@@ -40,33 +41,28 @@ class DesignContainer extends React.Component {
         this.setState({
             ...this.state,
         })
-    } */
+    } 
 
     render() {
         var tasks = {
-            beat1: [],
-            beat2: [],
-            beat3: [],
-            beat4: [],
-            beat5: [],
-            beat6: [],
-            yourbeats: [], 
+            beat: []
         }
         var assign = {
-            yourbeats:[]
+            yourBeats:[]
         }
 
-        this.state.tasks.forEach((t)=> {
-            tasks[t.category].push(
-                <div key={t.name} 
-                onDragStart = {(e)=> this.onDragStart(e,t.name)}
+        this.state.tasks.forEach((tsk)=> {
+            tasks[tsk.category].push(
+                <div key={tsk.name} 
+                onDragStart = {(e)=> this.onDragStart(e,tsk.name)}
                 draggable 
                 className="draggable" 
-                style = {{backgroundColor: t.bgcolor}}>
-                    {t.name}
+                style = {{backgroundColor: tsk.bgcolor}}>
+                    {tsk.name}
                 </div>
             )
         })
+
         return (
           <div className="container-drag">
               <h1 className="header">Design Board</h1>
@@ -127,4 +123,4 @@ class DesignContainer extends React.Component {
 
 }
 
-export default DesignContainer
+export default DnD */
