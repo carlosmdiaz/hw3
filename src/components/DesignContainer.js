@@ -7,7 +7,7 @@ class DesingPad extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activated: true
+      activated: false
     };
   }
 
